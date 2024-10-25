@@ -141,3 +141,11 @@ python3.10 sense_visualisation.py --model_name=backpack-lm --out_dir=out-bkp-sma
 ```bash
 python3.10 cloze_test.py --model_name=backpack-lm --out_dir=out-bkp-small-16 --device=cuda
 ```
+
+
+## Key Findings
+
+- Multilingual Training: This research marks the first application of Backpack LMs in multilingual settings, specifically training them on English and French corpora simultaneously.
+- Efficient Learning: The models efficiently learn word meanings without encoding language-specific sense vectors, allowing them to handle polysemous words effectively.
+- Performance Metrics: The Backpack LM with 143 million parameters achieved lower perplexity scores compared to a baseline Transformer model with 124 million parameters. It also outperformed the baseline in a cloze task, demonstrating superior context-dependent generation capabilities.
+- Sense Vector Analysis: The study found that the sense distributions learned by the Backpack LMs do not vary significantly across languages, suggesting that these models can effectively share sense vectors between languages without losing semantic accuracy.
