@@ -103,11 +103,31 @@ bash multiun/prepare.py
 
 ## Training
 
+We save the checkpoint of different models trained on Europarl and MultiUN on Google Drive:
+
+
+
 To train a Backpack LM model, follow these steps:
 1. Configure the training setup:
-  - Modify the configuration file in configs/ to set up the training parameters (e.g., learning rate, number of epochs, batch size).
+  - Modify the configuration file in config/ to set up the training parameters (e.g., `model_name`, `wandb_log`, `learning_rate`, `device`).
 2. Train the model:
   - Start training with the following command:
 ```bash
-python3.10 train.py config/train_small_8_eu.py --out_dir=out-europarl-small-bkp-8 --model_name=backpack-lm --init_from=resume
+python3.10 train.py config/train_small_16.py --out_dir=out-bkp-small-16 --model_name=backpack-lm
+```
+
+## Evaluation
+
+The evaluation includes both intrinsic and extrinsic metrics:
+  - Perplexity: Assesses the model’s ability to predict held-out text.
+```bash
+python3.10 perplexity_per_lang.py config/train_mini_16.py --model_name=backpack-lm --out_dir=out-bkp-mini-16 --device=cuda
+```
+  - Cloze task: Measures the model’s accuracy in filling in missing words.
+```bash
+python3.10 sense_visualisation.py --model_name=backpack-lm --out_dir=out-bkp-small-16 --device=cuda
+```
+  - Sense visualization and sense distribution: Analyzes the learned sense vectors for word representation.
+```bash
+python3.10 cloze_test.py --model_name=backpack-lm --out_dir=out-bkp-small-16 --device=cuda
 ```
