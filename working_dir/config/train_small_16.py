@@ -5,6 +5,8 @@
 # train a miniature character-level shakespeare model
 # good for debugging and playing on macbooks and such
 
+model_name = "backpack-lm"# or gpt2
+
 out_dir = 'out-small-16'
 eval_interval = 100 # keep frequent because we'll overfit
 eval_iters = 100
