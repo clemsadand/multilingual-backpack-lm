@@ -86,3 +86,9 @@ pip install torch==2.0.1
 pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu118
 ```
 ## Datasets
+
+The multilingual Backpack LM is trained on the following datasets:
+  - [Europarl](https://www.statmt.org/europarl/): Parallel French-English corpus from the European Parliament proceedings.
+  - [MultiUN](https://opus.nlpl.eu/MultiUN/en&fr/v1/MultiUN): Parallel corpus extracted from United Nations documents.
+
+Preprocessing scripts are provided in the scripts/ directory to download, clean, and tokenize the datasets.
