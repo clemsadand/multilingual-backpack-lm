@@ -23,7 +23,8 @@ Backpack LMs learn multiple sense vectors per word, allowing for explicit modeli
 The project requires the following dependencies:
   - Python 3.10
   - PyTorch 2.0.1+
-  - NumPy
+  - cuda 18
+  - NumPy 1.23.5
   - pandas
   - matplotlib
   - wandb
@@ -34,7 +35,6 @@ The project requires the following dependencies:
   - language_tool_python
   - tqdm
   - gdown
-  - cuda
 
 1. Clone this repository.
 
@@ -76,6 +76,7 @@ bash anaconda.sh
 5. To install the required packages, run:
 
 ```bash
+pip install numpy==1.23.5
 pip install language_tool_python PyMultiDictionary tqdm wandb gdown tiktoken dataclasses datasets 
 pip install torch==2.0.1
 pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu118
