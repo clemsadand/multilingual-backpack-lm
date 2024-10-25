@@ -28,7 +28,6 @@ The repository is organized as follows:
 The project requires the following dependencies:
 - Python 3.10
 - PyTorch 2.0.1+
-- Hugging Face Transformers
 - NumPy
 - pandas
 - matplotlib
