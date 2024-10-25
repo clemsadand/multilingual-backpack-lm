@@ -1,19 +1,17 @@
 
 # Multilingual Backpack Language Models
+<img src="https://img.shields.io/badge/Python-3.10-FFD43B?style=for-the-badge&logo=python&logoColor=blue" /> 
+<img src="https://img.shields.io/badge/PyTorch-2.0.1+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" /> 
+<img src="https://img.shields.io/badge/CUDA-18-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
+<img src="https://img.shields.io/badge/NumPy-1.23.5-777BB4?style=for-the-badge&logo=numpy&logoColor=white" /> 
+<img src="https://img.shields.io/badge/pandas-1.3.3-150458?style=for-the-badge&logo=pandas&logoColor=white" /> 
+<img src="https://img.shields.io/badge/matplotlib-3.4.3-#0099cc?style=for-the-badge&logo=plotly&logoColor=white" /> 
+<img src="https://img.shields.io/badge/wandb-0.13.6-FFBE00?style=for-the-badge&logo=wandb&logoColor=white" /> 
+<img src="https://img.shields.io/badge/tiktoken-3.4.0-0c5eaf?style=for-the-badge&logo=torbrowser&logoColor=white" /> 
+<img src="https://img.shields.io/badge/datasets-1.12.1-ff6c1e?style=for-the-badge&logo=data-table&logoColor=white" /> 
+<img src="https://img.shields.io/badge/dataclasses-0.9-00897B?style=for-the-badge&logo=data-badge&logoColor=black" /> 
+<img src="https://img.shields.io/badge/PyMultiDictionary-2.9.3-0000cc?style=for-the-badge&logo=googlebooks&logoColor=white" /> 
 
-![Python](https://img.shields.io/badge/python-3.10-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.0.1%2B-red)
-![CUDA](https://img.shields.io/badge/CUDA-18-green)
-![NumPy](https://img.shields.io/badge/NumPy-1.23.5-orange)
-![pandas](https://img.shields.io/badge/pandas-latest-lightgrey)
-![matplotlib](https://img.shields.io/badge/matplotlib-latest-yellow)
-![wandb](https://img.shields.io/badge/wandb-latest-brightgreen)
-![tiktoken](https://img.shields.io/badge/tiktoken-latest-blueviolet)
-![datasets](https://img.shields.io/badge/datasets-latest-9cf)
-![dataclasses](https://img.shields.io/badge/dataclasses-latest-lightblue)
-![PyMultiDictionary](https://img.shields.io/badge/PyMultiDictionary-latest-ff69b4)
-![language_tool_python](https://img.shields.io/badge/language__tool__python-latest-yellowgreen)
-![tqdm](https://img.shields.io/badge/tqdm-latest-informational)
 
 
 This repository contains the code, data, and experiments for the Multilingual Backpack Language Model, a project aimed at extending Backpack LMs to multilingual settings. Backpack LMs provide a flexible interface for interpretability and control in language modeling by explicitly encoding multiple senses for words. This work explores training Backpack LMs on parallel French-English corpora to efficiently handle polysemy in multilingual contexts.
