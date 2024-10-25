@@ -86,7 +86,28 @@ pip install --pre torch torchvision torchaudio --index-url https://download.pyto
 The multilingual Backpack LM is trained on the following datasets:
   - [Europarl](https://www.statmt.org/europarl/): Parallel French-English corpus from the European Parliament proceedings.
   - [MultiUN](https://opus.nlpl.eu/MultiUN/en&fr/v1/MultiUN): Parallel corpus extracted from United Nations documents.
+To download these datasets, run:
 
-Preprocessing scripts are provided in the data/europarl/ and data/multiun/ directories to [tokenize](working_dir/tokenizer/) and prepare for the datasets.
+```bash:
+cd data
+bash get_bash.sh
+```
 
-## 
+To tokenize these datasets and preprocess for training, run:
+
+```bash:
+cd data
+bash europarl/prepare.py
+bash multiun/prepare.py
+```
+
+## Training
+
+To train a Backpack LM model, follow these steps:
+1. Configure the training setup:
+  - Modify the configuration file in configs/ to set up the training parameters (e.g., learning rate, number of epochs, batch size).
+2. Train the model:
+  - Start training with the following command:
+```bash
+python3.10 train.py config/train_small_8_eu.py --out_dir=out-europarl-small-bkp-8 --model_name=backpack-lm --init_from=resume
+```
