@@ -23,7 +23,7 @@ Backpack LMs learn multiple sense vectors per word, allowing for explicit modeli
 The project requires the following dependencies:
   - Python 3.10
   - PyTorch 2.0.1+
-  - cuda 18
+  - CUDA 18
   - NumPy 1.23.5
   - pandas
   - matplotlib
@@ -114,6 +114,10 @@ To train a Backpack LM model, follow these steps:
   - Start training with the following command:
 ```bash
 python3.10 train.py config/train_small_16.py --out_dir=out-bkp-small-16 --model_name=backpack-lm
+```
+  - Resume a training with following command:
+```bash
+python3.10 train.py config/train_small_16.py --out_dir=out-bkp-small-16 --model_name=backpack-lm --init_from=resume
 ```
 
 ## Evaluation
