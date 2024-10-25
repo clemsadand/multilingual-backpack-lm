@@ -1,4 +1,20 @@
+
 # Multilingual Backpack Language Models
+
+![Python](https://img.shields.io/badge/python-3.10-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0.1%2B-red)
+![CUDA](https://img.shields.io/badge/CUDA-18-green)
+![NumPy](https://img.shields.io/badge/NumPy-1.23.5-orange)
+![pandas](https://img.shields.io/badge/pandas-latest-lightgrey)
+![matplotlib](https://img.shields.io/badge/matplotlib-latest-yellow)
+![wandb](https://img.shields.io/badge/wandb-latest-brightgreen)
+![tiktoken](https://img.shields.io/badge/tiktoken-latest-blueviolet)
+![datasets](https://img.shields.io/badge/datasets-latest-9cf)
+![dataclasses](https://img.shields.io/badge/dataclasses-latest-lightblue)
+![PyMultiDictionary](https://img.shields.io/badge/PyMultiDictionary-latest-ff69b4)
+![language_tool_python](https://img.shields.io/badge/language__tool__python-latest-yellowgreen)
+![tqdm](https://img.shields.io/badge/tqdm-latest-informational)
+
 
 This repository contains the code, data, and experiments for the Multilingual Backpack Language Model, a project aimed at extending Backpack LMs to multilingual settings. Backpack LMs provide a flexible interface for interpretability and control in language modeling by explicitly encoding multiple senses for words. This work explores training Backpack LMs on parallel French-English corpora to efficiently handle polysemy in multilingual contexts.
 
@@ -91,13 +107,16 @@ cd data
 bash get_bash.sh
 ```
 
-To tokenize these datasets and preprocess for training, run:
+We trained a [customized tokenizer](working_dir/tokenizer) on Europarl and MultiUn with 10K tokens.
+
+  - To tokenize these datasets and preprocess for training, run:
 
 ```bash:
 cd data
 bash europarl/prepare.py
 bash multiun/prepare.py
 ```
+  - To use the tokenized and preprocessed data, download [Europarl](https://drive.google.com/file/d/166DkV_hK7aYoIELXTZjDfmJni79_P-S4/view?usp=sharing) and [MultiUN](https://drive.google.com/file/d/1lwHiRw03d1Tb6QnqDSJQB1Xl03-8iyZ2/view?usp=sharing), and place them in `data/europarl` and `data/multiun` respectively.
 
 ## Training
 
