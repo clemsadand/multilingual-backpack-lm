@@ -147,3 +147,16 @@ python3.10 cloze_test.py --model_name=backpack-lm --out_dir=out-bkp-small-16 --d
 - Efficient Learning: The models efficiently learn word meanings without encoding language-specific sense vectors, allowing them to handle polysemous words effectively.
 - Performance Metrics: The Backpack LM (112M parameters) achieved lower perplexity scores compared to a baseline GPT2 (93M parameters). It slightly outperformed the baseline in a cloze task in top-1 accuracy, demonstrating superior context-dependent generation capabilities.
 - Sense Vector Analysis: The study found that the sense distributions learned by the Backpack LMs do not vary significantly across languages, suggesting that these models can effectively share sense vectors between languages without losing semantic accuracy.
+
+
+## Acknowledgements
+This implementation is based on the papers [Backpack Language Models]() and [Character-level Chinese Backpack Language Models](https://arxiv.org/abs/2310.12751).
+
+## Citations
+
+### References
+
+- **Backpack Language Models**: [Backpack Language Models](https://arxiv.org/abs/2305.16765) by John Hewitt, John Thickstun, Christopher D. Manning, and Percy Liang (2023).
+  
+- **Character-level Chinese Backpack Language Models**: [Character-level Chinese Backpack Language Models](https://arxiv.org/abs/2310.12751) by Hao Sun and John Hewitt (2023).
+
