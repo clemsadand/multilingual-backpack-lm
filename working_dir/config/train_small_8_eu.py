@@ -2,7 +2,6 @@
 
 # train a miniature character-level shakespeare model
 # good for debugging and playing on macbooks and such
-meta_vocab_size = 10001
 
 out_dir = 'out-europarl'
 eval_interval = 100 # keep frequent because we'll overfit
