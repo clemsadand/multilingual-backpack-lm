@@ -106,7 +106,7 @@ bash multiun/prepare.py
 We save the checkpoints of the different models trained on Europarl and MultiUN to Google Drive.
 
 |Model | Parameters| Number of sense vectors |
-|-----------------|--------------|-------------|
+|:-----------------:|:--------------:|:-------------:|
 |[Mini-GPT2](https://drive.google.com/file/d/1YxlRtqGeg-ISILtxDl0p6t4IrQR2qe-Y/view?usp=sharing)| 14M | - |
 |[Mini-Backpack-16](https://drive.google.com/file/d/1Q3ZXjrMXZylwCGqyFoHfBzX2gf09z_M3/view?usp=sharing)| 19M | 16 |
 |[Small-GPT2](https://drive.google.com/file/d/1gwbNGrDZ1MMR1L_nxfoQ1x9y_BgF5-gn/view?usp=sharing)| 93M | - |
