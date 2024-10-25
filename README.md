@@ -144,7 +144,6 @@ python3.10 cloze_test.py --model_name=backpack-lm --out_dir=out-bkp-small-16 --d
 
 
 ## Key Findings
-
 - Multilingual Training: This research marks the first application of Backpack LMs in multilingual settings, specifically training them on English and French corpora simultaneously.
 - Efficient Learning: The models efficiently learn word meanings without encoding language-specific sense vectors, allowing them to handle polysemous words effectively.
 - Performance Metrics: The Backpack LM (112M parameters) achieved lower perplexity scores compared to a baseline GPT2 (93M parameters). It slightly outperformed the baseline in a cloze task in top-1 accuracy, demonstrating superior context-dependent generation capabilities.
