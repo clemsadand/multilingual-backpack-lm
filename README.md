@@ -10,8 +10,7 @@ This repository contains the code, data, and experiments for the Multilingual Ba
 - [Training](#training)
 - [Evaluation](#evaluation)
 - [Key Findings](#key-findings)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -152,9 +151,7 @@ python3.10 cloze_test.py --model_name=backpack-lm --out_dir=out-bkp-small-16 --d
 ## Acknowledgements
 This implementation is based on the papers [Backpack Language Models]() and [Character-level Chinese Backpack Language Models](https://arxiv.org/abs/2310.12751).
 
-## Citations
-
-### References
+## References
 
 - **Backpack Language Models**: [Backpack Language Models](https://arxiv.org/abs/2305.16765) by John Hewitt, John Thickstun, Christopher D. Manning, and Percy Liang (2023).
   
