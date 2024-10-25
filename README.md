@@ -140,11 +140,11 @@ python3.10 perplexity_per_lang.py config/train_mini_16.py --model_name=backpack-
 ```
   - Cloze task: Measures the model’s accuracy in filling in missing words.
 ```bash
-python3.10 sense_visualisation.py --model_name=backpack-lm --out_dir=out-bkp-small-16 --device=cuda
-```
-  - Sense visualization and sense distribution: Analyzes the learned sense vectors for word representation.
-```bash
 python3.10 cloze_test.py --model_name=backpack-lm --out_dir=out-bkp-small-16 --device=cuda
+```
+  - Sense visualization: Analyzes the learned sense vectors for word representation.
+```bash
+python3.10 sense_visualisation.py --model_name=backpack-lm --out_dir=out-bkp-small-16 --device=cuda
 ```
 
 
