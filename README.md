@@ -19,7 +19,7 @@ Backpack LMs learn multiple sense vectors per word, allowing for explicit modeli
 
 ## Installation
 
-The project requires the following dependencies:
+<!--The project requires the following dependencies:
   - Python 3.10
   - PyTorch 2.0.1+
   - CUDA 18
@@ -33,8 +33,8 @@ The project requires the following dependencies:
   - PyMultiDictionary
   - language_tool_python
   - tqdm
-  - gdown
-
+  -->
+  
 1. Clone this repository.
 
 ```bash
