@@ -103,11 +103,17 @@ bash multiun/prepare.py
 
 ## Training
 
-We save the checkpoint of different models trained on Europarl and MultiUN on Google Drive:
+We save the checkpoints of the different models trained on Europarl and MultiUN to Google Drive.
+
+|Model | Parameters| Number of sense vectors |
+|-----------------|--------------|-------------|
+|[Mini-GPT2](https://drive.google.com/file/d/1YxlRtqGeg-ISILtxDl0p6t4IrQR2qe-Y/view?usp=sharing)| 14M | - |
+|[Mini-Backpack-16](https://drive.google.com/file/d/1Q3ZXjrMXZylwCGqyFoHfBzX2gf09z_M3/view?usp=sharing)| 19M | 16 |
+|[Small-GPT2](https://drive.google.com/file/d/1gwbNGrDZ1MMR1L_nxfoQ1x9y_BgF5-gn/view?usp=sharing)| 93M | - |
+|[Small-Backpack-16](https://drive.google.com/file/d/1bSEPVB42utEsIRyELnIgLQ0S9F0iyrIg/view?usp=sharing)| 112M | 16|
 
 
-
-To train a Backpack LM model, follow these steps:
+To train a Backpack LM model or GPT2, follow these steps:
 1. Configure the training setup:
   - Modify the configuration file in config/ to set up the training parameters (e.g., `model_name`, `wandb_log`, `learning_rate`, `device`).
 2. Train the model:
