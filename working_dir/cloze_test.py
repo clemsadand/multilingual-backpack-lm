@@ -24,7 +24,9 @@ def cloze_test(paths, model_name=model_name, k=3):
 
     for path in paths:
       top1, top3 = 0, 0
-      dev_set = load_dev_set(path)
+      dev_set = ""
+      if path.endswith(".jsonl"):
+      	dev_set = load_dev_set(path)
 
       for data in dev_set:
           cloze_passage = data['cloze_passage']
