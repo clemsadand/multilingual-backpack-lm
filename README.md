@@ -87,6 +87,6 @@ The multilingual Backpack LM is trained on the following datasets:
   - [Europarl](https://www.statmt.org/europarl/): Parallel French-English corpus from the European Parliament proceedings.
   - [MultiUN](https://opus.nlpl.eu/MultiUN/en&fr/v1/MultiUN): Parallel corpus extracted from United Nations documents.
 
-Preprocessing scripts are provided in the data/europarl/ and data/multiun/ directories to [tokenize](tokenizer/) and prepare for the datasets.
+Preprocessing scripts are provided in the data/europarl/ and data/multiun/ directories to [tokenize](working_dir/tokenizer/) and prepare for the datasets.
 
 ## 
