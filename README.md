@@ -26,20 +26,20 @@ The repository is organized as follows:
 ## Installation
 
 The project requires the following dependencies:
-- Python 3.10
-- PyTorch 2.0.1+
-- NumPy
-- pandas
-- matplotlib
-- wandb
-- tiktoken
-- datasets
-- dataclasses
-- PyMultiDictionary
-- language_tool_python
-- tqdm
-- gdown
-- cuda
+  - Python 3.10
+  - PyTorch 2.0.1+
+  - NumPy
+  - pandas
+  - matplotlib
+  - wandb
+  - tiktoken
+  - datasets
+  - dataclasses
+  - PyMultiDictionary
+  - language_tool_python
+  - tqdm
+  - gdown
+  - cuda
 
 1. Clone this repository.
 
@@ -64,19 +64,19 @@ bash anaconda.sh
 
 4. You need to create a virtual environment with Python3.10.
 
-- With conda:
+  - With conda:
   
-```bash
-conda create --name bkp python=3.10
-conda activate bkp # to activate
-```
+  ```bash
+  conda create --name bkp python=3.10
+  conda activate bkp # to activate
+  ```
 
-- Without conda:
+  - Without conda:
 
-```bash
-python3.10 -m venv bkp
-source bkp/bin/activate #to activate
-```
+  ```bash
+  python3.10 -m venv bkp
+  source bkp/bin/activate #to activate
+  ```
 
 5. To install the required packages, run:
 
@@ -91,4 +91,6 @@ The multilingual Backpack LM is trained on the following datasets:
   - [Europarl](https://www.statmt.org/europarl/): Parallel French-English corpus from the European Parliament proceedings.
   - [MultiUN](https://opus.nlpl.eu/MultiUN/en&fr/v1/MultiUN): Parallel corpus extracted from United Nations documents.
 
-Preprocessing scripts are provided in the scripts/ directory to download, clean, and tokenize the datasets.
+Preprocessing scripts are provided in the data/europarl/ and data/multiun/ directories to [tokenize](tokenizer/) and prepare for the datasets.
+
+## 
