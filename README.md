@@ -106,6 +106,9 @@ bash multiun/prepare.py
 ```
   - To use the tokenized and preprocessed data, download [Europarl](https://drive.google.com/file/d/166DkV_hK7aYoIELXTZjDfmJni79_P-S4/view?usp=sharing) and [MultiUN](https://drive.google.com/file/d/1lwHiRw03d1Tb6QnqDSJQB1Xl03-8iyZ2/view?usp=sharing), and place them in `data/europarl` and `data/multiun` respectively.
 
+![Data Processing Workflow](working_dir/img/workflow_data_processing.png)
+Figure above present the workflow of the data preprocessing. The diagram illustrates the steps from merging bilingual corpora (Europarl and MultiUN) to training a customized BPE tokenizer. It includes processes for tokenizing the Europarl French corpus and splitting the tokenized data into train, validation, and test sets for further processing.
+
 ## 4. Training
 
 We save the checkpoints of the different models trained on Europarl and MultiUN to Google Drive.
@@ -153,7 +156,6 @@ This research marks the first application of Backpack LMs in multilingual settin
 
 ### 6.1. Efficient Learning
 The models efficiently learn word meanings without encoding language-specific sense vectors, allowing them to handle polysemous words effectively.
-![Data Processing Workflow](working_dir/img/workflow_data_processing.pdf)
 
 ### 6.2. Performance Metrics
 The Backpack LM (112M parameters) achieved lower perplexity scores compared to a baseline GPT2 (93M parameters). It slightly outperformed the baseline in a cloze task in top-1 accuracy.<!--, demonstrating superior context-dependent generation capabilities.-->
