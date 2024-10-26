@@ -44,7 +44,7 @@ Backpack LMs learn multiple sense vectors per word, allowing for explicit modeli
 
 ```bash
 git clone https://github.com/clemsadand/multilingual-backpack-lm.git
-cd working_dir
+cd multilingual-backpack-lm/working_dir
 ```
 
 2. You need to install NVIDIA-drivers. Run:
