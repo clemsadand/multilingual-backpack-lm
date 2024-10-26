@@ -8,12 +8,12 @@ This repository contains the code, data, and experiments for the Multilingual Ba
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Datasets](#datasets)
-- [Training](#training)
-- [Evaluation](#evaluation)
-- [Key Findings](#key-findings)
+- [Introduction](#1.-introduction)
+- [Installation](#2.-installation)
+- [Datasets](#3.-datasets)
+- [Training](#4.-training)
+- [Evaluation](#5.-evaluation)
+- [Key Findings](#6.-key-findings)
 
 
 ## 1. Introduction
