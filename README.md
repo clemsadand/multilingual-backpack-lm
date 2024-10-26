@@ -16,11 +16,11 @@ This repository contains the code, data, and experiments for the Multilingual Ba
 - [Key Findings](#key-findings)
 
 
-## Introduction
+## 1. Introduction
 
 Backpack LMs learn multiple sense vectors per word, allowing for explicit modeling of polysemous words. Previously tested in monolingual settings for English and Chinese, this project extends the Backpack architecture to multilingual modeling by training on both English and French using Europarl and MultiUN datasets. The multilingual Backpack LM efficiently encodes word meanings across languages, demonstrating lower perplexity and improved accuracy on cloze tasks compared to baseline GPT-2 models.
 
-## Installation
+## 2. Installation
 
 <!--The project requires the following dependencies:
   - Python 3.10
@@ -83,7 +83,7 @@ pip install language_tool_python PyMultiDictionary tqdm wandb gdown tiktoken dat
 pip install torch==2.0.1
 pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu118
 ```
-## Datasets
+## 3. Datasets
 
 The multilingual Backpack LM is trained on the following datasets:
   - [Europarl](https://www.statmt.org/europarl/): Parallel French-English corpus from the European Parliament proceedings.
@@ -106,7 +106,7 @@ bash multiun/prepare.py
 ```
   - To use the tokenized and preprocessed data, download [Europarl](https://drive.google.com/file/d/166DkV_hK7aYoIELXTZjDfmJni79_P-S4/view?usp=sharing) and [MultiUN](https://drive.google.com/file/d/1lwHiRw03d1Tb6QnqDSJQB1Xl03-8iyZ2/view?usp=sharing), and place them in `data/europarl` and `data/multiun` respectively.
 
-## Training
+## 4. Training
 
 We save the checkpoints of the different models trained on Europarl and MultiUN to Google Drive.
 
@@ -131,7 +131,7 @@ python3.10 train.py config/train_small_16.py --out_dir=out-bkp-small-16 --model_
 python3.10 train.py config/train_small_16.py --out_dir=out-bkp-small-16 --model_name=backpack-lm --init_from=resume
 ```
 
-## Evaluation
+## 5. Evaluation
 
 The evaluation includes both intrinsic and extrinsic metrics:
   - Perplexity: Assesses the model’s ability to predict held-out text.
@@ -148,17 +148,17 @@ python3.10 sense_visualisation.py --model_name=backpack-lm --out_dir=out-bkp-sma
 ```
 
 
-## Key Findings
+## 6. Key Findings
 This research marks the first application of Backpack LMs in multilingual settings, specifically training them on English and French corpora simultaneously.
 
-### 1. Efficient Learning
+### 6.1. Efficient Learning
 The models efficiently learn word meanings without encoding language-specific sense vectors, allowing them to handle polysemous words effectively.
 ![Data Processing Workflow](working_dir/img/workflow_data_processing.pdf)
 
-### 2. Performance Metrics
+### 6.2. Performance Metrics
 The Backpack LM (112M parameters) achieved lower perplexity scores compared to a baseline GPT2 (93M parameters). It slightly outperformed the baseline in a cloze task in top-1 accuracy.<!--, demonstrating superior context-dependent generation capabilities.-->
 
-### 3. Sense Vector Analysis
+### 6.3. Sense Vector Analysis
 
 The study found that the sense distributions learned by the Backpack LMs do not vary significantly across languages, suggesting that these models can effectively share sense vectors between languages without losing semantic accuracy.
 
