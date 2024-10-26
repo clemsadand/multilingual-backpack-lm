@@ -20,6 +20,8 @@ This repository contains the code, data, and experiments for the Multilingual Ba
 
 Backpack LMs learn multiple sense vectors per word, allowing for explicit modeling of polysemous words. Previously tested in monolingual settings for English and Chinese, this project extends the Backpack architecture to multilingual modeling by training on both English and French using Europarl and MultiUN datasets. The multilingual Backpack LM efficiently encodes word meanings across languages, demonstrating lower perplexity and improved accuracy on cloze tasks compared to baseline GPT-2 models.
 
+![Backpack Architecture](working_dir/img/trans_bkp_rep.png)
+
 ## 2. Installation
 
 <!--The project requires the following dependencies:
