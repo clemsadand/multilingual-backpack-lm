@@ -94,7 +94,7 @@ To download these datasets, run:
 
 ```bash:
 cd data
-bash get_bash.sh
+bash get_data.sh
 ```
 
 We trained a [customized tokenizer](working_dir/tokenizer) on Europarl and MultiUn with 10K tokens.
