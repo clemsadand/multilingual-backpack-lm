@@ -168,7 +168,7 @@ The study found that the sense distributions learned by the Backpack LMs do not 
 
 
 ## Acknowledgements
-This implementation is based on the papers [Backpack Language Models]() and [Character-level Chinese Backpack Language Models](https://arxiv.org/abs/2310.12751).
+This implementation is based on the Github repo [Character-level Chinese Backpack Language Models](https://github.com/SwordElucidator/nanoBackpackLM). The Github repo of the Backpack Language Models is [here](https://github.com/john-hewitt/backpacks-flash-attn).
 
 ## References
 
