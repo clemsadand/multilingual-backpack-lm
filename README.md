@@ -177,18 +177,12 @@ The study found that the sense distributions learned by the Backpack LMs do not 
 
 | Sense 4 (French words)            |               |                |
 |---------------------|---------------|----------------|
-| equality            | job           | necessary      |
-| (égalité)           | (emploi)      | (nécessaire)   |
-| equality            | employability | effectively    |
-| (égalité)           | (employabilité) | (efficacement) |
-| males               | job           | indispensable  |
-| (masculins)         | (emploi)      | (indispensables) |
-| discriminations     | employment    | necessary      |
-| (discriminations)   | (Employment)  | (nécessaire)   |
-| inequality          | unemployed    | indispensable  |
-| (inégalité)         | (chômeurs)    | (indispensable) |
-| feminine            | job           | essential      |
-| (féminin)           | (emploi)      | (primordiales) |
+| equality (égalité)  | job (emploi)  | necessary (nécessaire) |
+| equality (égalité)  | employability (employabilité) | effectively (efficacement) |
+| males (masculins)   | job (emploi)  | indispensable (indispensables) |
+| discriminations     | employment    | necessary (nécessaire) |
+| inequality (inégalité) | unemployed (chômeurs) | indispensable (indispensable) |
+| feminine (féminin)  | job (emploi)  | essential (primordiales) |
 
 
 
