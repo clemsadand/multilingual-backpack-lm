@@ -162,9 +162,7 @@ The models efficiently learn word meanings without encoding language-specific se
 ### 6.2. Performance Metrics
 The Backpack LM (112M parameters) achieved lower perplexity scores compared to a baseline GPT2 (93M parameters). It slightly outperformed the baseline in a cloze task in top-1 accuracy.<!--, demonstrating superior context-dependent generation capabilities.-->
 
-### 6.3. Sense Vector Analysis
-
-The study found that the sense distributions learned by the Backpack LMs do not vary significantly across languages, suggesting that these models can effectively share sense vectors between languages without losing semantic accuracy.
+### 6.3. Sense Visualisation
 
 | Sense 4 (English words)             |               |                |
 |---------------------|---------------|----------------|
@@ -185,6 +183,10 @@ The study found that the sense distributions learned by the Backpack LMs do not 
 | feminine (féminin)  | job (emploi)  | essential (primordiales) |
 
 Sense 4 encodes different grammatical forms, with related nouns and adverbs in both languages for almost all words.
+
+### 6.4. Sense Vector Analysis
+
+The study found that the sense distributions learned by the Backpack LMs do not vary significantly across languages, suggesting that these models can effectively share sense vectors between languages without losing semantic accuracy.
 
 ## Acknowledgements
 This implementation is based on the Github repo [nano-BackpackLM](https://github.com/SwordElucidator/nanoBackpackLM). <!--The Github repo of the Backpack Language Models is [here](https://github.com/john-hewitt/backpacks-flash-attn). -->
