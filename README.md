@@ -166,6 +166,31 @@ The Backpack LM (112M parameters) achieved lower perplexity scores compared to a
 
 The study found that the sense distributions learned by the Backpack LMs do not vary significantly across languages, suggesting that these models can effectively share sense vectors between languages without losing semantic accuracy.
 
+| Sense 4 (English words)            |               |                |
+|---------------------|---------------|----------------|
+| rights              | law           | quick          |
+| rights              | Constitutions | quickly        |
+| Universal           | law           | quick          |
+| constitutions       | jur           | faster         |
+| right               | Arrest        | fast           |
+| Covenant            | judges (juges)| quickest       |
+
+| Sense 4 (French words)            |               |                |
+|---------------------|---------------|----------------|
+| equality            | job           | necessary      |
+| (égalité)           | (emploi)      | (nécessaire)   |
+| equality            | employability | effectively    |
+| (égalité)           | (employabilité) | (efficacement) |
+| males               | job           | indispensable  |
+| (masculins)         | (emploi)      | (indispensables) |
+| discriminations     | employment    | necessary      |
+| (discriminations)   | (Employment)  | (nécessaire)   |
+| inequality          | unemployed    | indispensable  |
+| (inégalité)         | (chômeurs)    | (indispensable) |
+| feminine            | job           | essential      |
+| (féminin)           | (emploi)      | (primordiales) |
+
+
 
 ## Acknowledgements
 This implementation is based on the Github repo [nano-BackpackLM](https://github.com/SwordElucidator/nanoBackpackLM). <!--The Github repo of the Backpack Language Models is [here](https://github.com/john-hewitt/backpacks-flash-attn). -->
