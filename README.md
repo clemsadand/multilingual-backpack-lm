@@ -164,6 +164,8 @@ The Backpack LM (112M parameters) achieved lower perplexity scores compared to a
 
 ### 6.3. Sense Visualisation
 
+Sense 4 encodes different grammatical forms, with related nouns and adverbs in both languages for almost all words.
+
 | Sense 4 (English words)             |               |                |
 |---------------------|---------------|----------------|
 | **rights**          | **law**      | **quick**      |
@@ -182,7 +184,6 @@ The Backpack LM (112M parameters) achieved lower perplexity scores compared to a
 | inequality (inégalité) | unemployed (chômeurs) | indispensable (indispensable) |
 | feminine (féminin)  | job (emploi)  | essential (primordiales) |
 
-Sense 4 encodes different grammatical forms, with related nouns and adverbs in both languages for almost all words.
 
 ### 6.4. Sense Vector Analysis
 
